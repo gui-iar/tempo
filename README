@@ -14,4 +14,12 @@ either of the following:
 A permanent reference URL for tempo is at the Astrophysics Source Code Library:
   http://www.ascl.net/1509.002
 
+IAR:
+#Now build tempo
+cd $PULSARSOFTWARE_DIR/tempo
+./prepare
+./configure F77=gfortran --prefix=$PULSARSOFTWARE_DIR LIBS=-lgslcblas CFLAGS=-fPIC FFLAGS=-fPIC
+make
+make install
+
 
