@@ -16,6 +16,7 @@ A permanent reference URL for tempo is at the Astrophysics Source Code Library:
 
 IAR:
 #Now build tempo
+PULSARSOFTWARE_DIR=/opt/pulsar/
 cd $PULSARSOFTWARE_DIR/tempo
 ./prepare
 ./configure F77=gfortran --prefix=$PULSARSOFTWARE_DIR LIBS=-lgslcblas CFLAGS=-fPIC FFLAGS=-fPIC
